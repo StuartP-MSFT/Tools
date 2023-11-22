@@ -1,6 +1,6 @@
 # Tools
 
-#iDNA CheckList & Recommended Practices 
+# iDNA CheckList & Recommended Practices 
 
 Please read the following instructions carefully.  Any deviation from the steps below could result in delayed analysis. 
 
