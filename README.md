@@ -7,7 +7,7 @@ Please read the following instructions carefully.  Any deviation from the steps 
 [[_TOC_]]
 
 
-##Before 
+## Before 
 
 1. Limit activity from other users as much as possible to help eliminate noise and reduce the size of trace. Ensure that you can force the repro to a single specific server
 1. Ensure you have about 20GB free disk space 
@@ -26,7 +26,7 @@ Please read the following instructions carefully.  Any deviation from the steps 
 1. Start a new ULS log file 
 ```PS C:\Users\Administrator.CONTOSO> New-SPLogFile```
  
-##During 
+## During 
 1. Execute the TTTracer command from **Before: Step 6** and wait for the tracing window
 
     Note: You may have to wait up to 5 minutes, but eventually a small window will appear that has a checkbox for **Tracing On**. Leave this window active.
@@ -44,7 +44,7 @@ w3wp.exe(x64) (400): Tracing stopped after 31171ms
   Full trace dumped to C:\TTT_x64_x64_External\x64\w3wp01.run 
 ```
  
-##After 
+## After 
 1. Start a new ULS log file 
 
    ```PS C:\Users\Administrator.CONTOSO> New-SPLogFile ```
@@ -62,10 +62,10 @@ w3wp.exe(x64) (400): Tracing stopped after 31171ms
  
 1. Upload the archive to the workspace provided by the Microsoft support engineer. 
 
-##Identifying the Process ID (PID)
+## Identifying the Process ID (PID)
 There are multiple ways to identify the process ID for the task you need to trace. 
 
-###Task Manager
+### Task Manager
 To Identify the Process ID (PID) of the task you are interested in Tracing. If you are debugging an app pool a real simple way to identify the correct on is
 1. Start TASKMGR, click on the Details tab and right click on the column headers. 
 1. Click on Select Column
@@ -76,7 +76,7 @@ In this example the "SharePoint - 8080" Application is on PID 7348. To trace thi
 
 ```TTTRacer -DumpFull -attach 7348```
 
-###AppCmd
+### AppCmd
 Alternatively, and perhaps easier, you can use APPCMD from the C:\windows\system32\inetsrv folder:
 
 ```
