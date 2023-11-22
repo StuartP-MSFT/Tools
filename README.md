@@ -4,9 +4,6 @@
 
 Please read the following instructions carefully.  Any deviation from the steps below could result in delayed analysis. 
 
-[[_TOC_]]
-
-
 ## Before 
 
 1. Limit activity from other users as much as possible to help eliminate noise and reduce the size of trace. Ensure that you can force the repro to a single specific server
